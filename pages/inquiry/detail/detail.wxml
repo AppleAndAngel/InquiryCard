@@ -9,7 +9,7 @@
         <text>{{balance}}</text>
     </view>
     <view>
-        <label>最近充值日期：</label>
+        <label>最近日期：</label>
         <text>{{currentBDate}}</text>
     </view>
     <view>

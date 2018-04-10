@@ -1,6 +1,16 @@
 /* pages/inquiry/inquiry.wxss */
+.page_hd_picker{
+    /*border-top:1rpx solid #bcb8be;*/
+    font-size:30rpx;
+    /*border-bottom:1rpx solid #bcb8be;*/
+    padding-right:50rpx;
+
+}
+.page_bd{
+    margin-top:100rpx;
+}
 .page_bd_in{
     font-size:30rpx;
     padding-left: 30rpx;
-    background: #eeeeee;
+    border:1rpx solid #d4d4d4;
 }

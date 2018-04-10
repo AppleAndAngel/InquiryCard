@@ -1,4 +1,9 @@
 // pages/inquiry/detail/detail.js
+
+var getInquiryData = require('../../../common/inquirydata.js')
+
+
+
 Page({
 
   /**
@@ -16,18 +21,10 @@ Page({
    */
   onLoad: function (options) {
     let _this = this;
-    wx.request({
-      url: 'http://api.oupag.com/dev/api/shenzhentong.php?cardno='+options.no,
-      success: function (res) {
-        _this.setData({
-          cardNo:res.data.card_number,
-          balance:res.data.card_balance,
-          currentBDate:res.data.balance_time,
-          outDate:res.data.card_validity
-        })
-      }
-    })
-    console.log(options)
+    let city = options.city
+
+    getInquiryData[city](options.no,_this)
+    
   },
 
   /**

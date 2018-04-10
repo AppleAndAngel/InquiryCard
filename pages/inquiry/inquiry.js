@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    inputNo:''
+    inputNo:'',
+    cityArray:[{
+      city:'深圳',
+      pinyin:'shenzhen'  
+    },{
+      city:'上海',
+      pinyin:'shanghai'
+    }],
+    cityIndex:0
   },
 
   /**
@@ -28,6 +36,12 @@ Page({
   },
   inquiryCardNo(){
     dsd
+  },
+  bindPickerChange(e){
+    this.setData({
+      cityIndex:e.detail.value
+    })
+    console.log(e)
   },
 
   /**

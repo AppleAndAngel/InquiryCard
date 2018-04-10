@@ -1,7 +1,14 @@
 <!--pages/inquiry/inquiry.wxml-->
+<view class="page_hd">
+    <picker class="page_hd_picker text-right" bindchange="bindPickerChange" value="{{cityArray[cityIndex].pinyin}}" range-key="city" range="{{cityArray}}">
+        <view class="picker">
+            当前选择：{{cityArray[cityIndex].city}}
+        </view>
+  </picker>
+</view>
 <view class="page_bd">
     <input class="weui-input page_bd_in" bindblur="inputCardNo" placeholder="请输入查询卡号" />
-    <navigator url="detail/detail?no={{inputNo}}">
+    <navigator url="detail/detail?no={{inputNo}}&city={{cityArray[cityIndex].pinyin}}">
         <button class="weui-btn weui-btn_mini weui-btn_primary">查询</button>
     </navigator>
 </view>
