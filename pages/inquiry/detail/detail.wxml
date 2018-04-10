@@ -1,0 +1,19 @@
+<!--pages/inquiry/detail/detail.wxml-->
+<view class="page_bd">
+    <view>
+        <label>卡号：</label>
+        <text>{{cardNo}}</text>
+    </view>
+    <view>
+        <label>余额：</label>
+        <text>{{balance}}</text>
+    </view>
+    <view>
+        <label>最近充值日期：</label>
+        <text>{{currentBDate}}</text>
+    </view>
+    <view>
+        <label>卡有效截止日期：</label>
+        <text>{{outDate}}</text>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/inquiry/inquiry.wxml-->
+<view class="page_bd">
+    <input class="weui-input page_bd_in" bindblur="inputCardNo" placeholder="请输入查询卡号" />
+    <navigator url="detail/detail?no={{inputNo}}">
+        <button class="weui-btn weui-btn_mini weui-btn_primary">查询</button>
+    </navigator>
+</view>
